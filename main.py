@@ -16,6 +16,9 @@ class MatchForm(Form):
     skills = StringField('Skills', [validators.optional(), validators.length(max=200)])
     otherinterests = StringField('Other Interests', [validators.optional(), validators.length(max=200)])
 
+@app.route('/Statistics')
+def statis():
+    return render_template('statistics.html')
 
 @app.route('/fit', methods=['GET', 'POST'])
 def fit():
