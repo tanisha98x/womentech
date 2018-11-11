@@ -19,7 +19,9 @@ class MatchForm(Form):
 @app.route('/Statistics')
 def statis():
     return render_template('statistics.html')
-
+@app.route('/about')
+def about():
+    return render_template('about.html')
 @app.route('/inspiration')
 def inspiration():
     return render_template('inspiration.html')
