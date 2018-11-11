@@ -37,7 +37,7 @@ def fit():
 
         if "programming" in skills:
             output = "software enginner"
-        if "communitation" in skills:
+        if "communication" in skills:
             output = "Product Manager"
         if "design" in skills:
             output = "UI/UX"
