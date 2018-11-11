@@ -20,6 +20,9 @@ class MatchForm(Form):
 def statis():
     return render_template('statistics.html')
 
+@app.route('/inspiration')
+def inspiration():
+    return render_template('inspiration.html')
 @app.route('/fit', methods=['GET', 'POST'])
 def fit():
     form = MatchForm(request.form)
