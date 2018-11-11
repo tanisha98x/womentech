@@ -1,3 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
 <html lang="en">
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -11,63 +15,41 @@ body {font-family: "Lato", sans-serif}
 </style>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">About FEMpower</a>
-
-    <div class="w3-dropdown-hover w3-hide-small">
-
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button"></a>
-
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Empower</h3>
+    <img src="https://preview.ibb.co/f3gi7q/Screen-Shot-2018-11-11-at-11-11-02-AM.png" alt="my dog eating a tangerine">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h3 class="w3-wide">EMPOWER</h3>
       <p><b>We provide stats that show how women are rising in tech!</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Connect</h3>
+    <img src="https://preview.ibb.co/f3gi7q/Screen-Shot-2018-11-11-at-11-11-02-AM.png" alt="my dog eating a tangerine">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h3 class="w3-wide">CONNECT</h3>
       <p><b>We connect women to work opportunities everywhere</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Inspire</h3>
+    <img src="https://preview.ibb.co/f3gi7q/Screen-Shot-2018-11-11-at-11-11-02-AM.png" alt="my dog eating a tangerine">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h3 class="w3-wide">INSPIRE</h3>
       <p><b>We provide young girls with role models who they can aspire to be like </b></p>
     </div>
   </div>
 
+
+
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="band">
     <h2 class="w3-wide">OUR TEAM</h2>
     <p class="w3-opacity"><i>Who run the world? GIRLS! </i></p>
-    <p class="w3-justify">We are college kids who came together for one purpose: to help women be more connected the way we found each other.  </p>
-    <div class="w3-row w3-padding-32">
+    <p class="w3-center">We are college kids who came together for one purpose: to help women be more connected the way we found each other.  </p>
+    <div class="w3-row w3-padding-35">
 
 
 
@@ -109,3 +91,5 @@ window.onclick = function(event) {
 
 </body>
 </html>
+
+{% endblock %}

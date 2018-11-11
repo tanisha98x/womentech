@@ -35,15 +35,27 @@ def fit():
         skills = form.skills.data
         otherinterests = form.otherinterests.data
         jsonFile = convertJson(name, email, degree, skills, otherinterests)
-        output = "software enginner"
+        output = "software engineer"
 
-        if "programming" in skills:
-            output = "software enginner"
+        if "programming" or "Programming" in skills:
+            output = "software engineer"
         if "communication" in skills:
-            output = "Product Manager"
+            output = "Product Manager, Recruiter"
+        if "Communication" in skills:
+            output = "Product Manager, Recruiter"
+        if "Design" in skills:
+            output = "UI/UX"
         if "design" in skills:
             output = "UI/UX"
+        if "Gaming" in skills:
+            output = "Game Designer"
+        if "gaming" in skills:
+            output = "Game Designer"
+        if "Leadership" in skills:
+            output = "Project Manager"
 
+        if "leadership" in skills:
+            output = "Project Manager"
 
         return render_template('displayresult.html', companies = output)
 
